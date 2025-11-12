@@ -17,5 +17,5 @@ eureka:
     fetch-registry: true
 server:
   port: 0
-    instance:
+  instance:
     instance-id: ${spring.application.name}-${spring.application.instance_id:${random.int[0,99]}}
