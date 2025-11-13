@@ -17,7 +17,7 @@ eureka:
     fetch-registry: true
   instance:
     hostname: 192.168.1.12
-    non-secure-port: 9000
+    non-secure-port: 9002
 #    instance-id: ${spring.application.name}-${spring.application.instance_id:${random.int[0,99]}}
 server:
   port: 8500
