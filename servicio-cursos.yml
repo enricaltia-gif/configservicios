@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/cursos?serverTimezone=UTC
+    url: jdbc:mysql://192.168.1.12:3306/cursos?serverTimezone=UTC
     username: root 
     password: Epoalti@1224
   jpa:
@@ -16,6 +16,8 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
   instance:
+    hostname: 192.168.1.12
+    non-secure-port: 9000
     instance-id: ${spring.application.name}-${spring.application.instance_id:${random.int[0,99]}}
 server:
   port: 0
