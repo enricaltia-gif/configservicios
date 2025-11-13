@@ -12,12 +12,11 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://eureka-server:8761/eureka
+      defaultZone: http://192.168.1.12:8761/eureka
     register-with-eureka: true
     fetch-registry: true
   instance:
     hostname: 192.168.1.12
     non-secure-port: 9002
-#    instance-id: ${spring.application.name}-${spring.application.instance_id:${random.int[0,99]}}
 server:
   port: 8500
