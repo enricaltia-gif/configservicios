@@ -2,13 +2,14 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://192.168.1.12:3306/cursos?serverTimezone=UTC
-    username: root 
+    username: root
     password: Epoalti@1224
   jpa:
     hibernate:
       naming:
         implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
 eureka:
   client:
     serviceUrl:
@@ -18,5 +19,6 @@ eureka:
   instance:
     hostname: 192.168.1.12
     non-secure-port: 9002
+
 server:
   port: 8500
