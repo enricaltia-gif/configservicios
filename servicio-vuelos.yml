@@ -22,3 +22,6 @@ eureka:
 
 server:
   port: 8600
+springdoc:
+  packagesToScan: com.curso.controller
+  pathsToMatch: /**
