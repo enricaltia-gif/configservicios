@@ -17,11 +17,12 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
   instance:
+    instance-id: ${spring.application.name}:${server.port}
     hostname: 192.168.1.12
-    non-secure-port: 9002
+    non-secure-port: ${server.port}
 
 server:
-  port: 8600
+  port: ${SERVER_PORT:8600}
 springdoc:
   packagesToScan: com.curso.controller
   pathsToMatch: /**
