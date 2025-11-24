@@ -18,7 +18,7 @@ eureka:
     fetch-registry: true
   instance:
     hostname: 192.168.1.12
-    non-secure-port: 8600
+    non-secure-port: 9200
     
 server:
   port: 8600
