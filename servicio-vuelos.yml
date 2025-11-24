@@ -19,7 +19,7 @@ eureka:
   instance:
     hostname: 192.168.1.12
     non-secure-port: 9002
-
+    
 server:
   port: 8600
 springdoc:
